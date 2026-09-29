@@ -1,0 +1,88 @@
+/* 1. Убираем отступы у всех элементов */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 2. Настройки страницы */
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f4f8;
+    padding: 30px 20px;
+}
+
+/* 3. Заголовок страницы */
+.page-title {
+    text-align: center;
+    color: #2c3e50;
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+/* 4. Контейнер */
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* 5. Карточка поисковика */
+.search-block {
+    background: white;
+    padding: 20px 25px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 6. Заголовок внутри карточки */
+.search-block h2 {
+    font-size: 18px;
+    color: #2c3e50;
+    margin-bottom: 12px;
+}
+
+/* 7. Форма */
+.search-block form {
+    display: flex;
+    gap: 10px;
+}
+
+/* 8. Поле ввода */
+.search-block input[type="text"] {
+    flex: 1;
+    padding: 10px 14px;
+    border: 2px solid #dce1e8;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+/* 9. Кнопка */
+.search-block input[type="submit"] {
+    padding: 10px 24px;
+    background: #3498db;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+/* 10. Кнопка при наведении */
+.search-block input[type="submit"]:hover {
+    background: #2980b9;
+}
+
+/* 11. Цветные заголовки */
+.search-block.google h2 { color: #4285f4; }
+.search-block.yandex h2 { color: #fc3f1d; }
+.search-block.mail h2 { color: #005ff9; }
+.search-block.yahoo h2 { color: #720e9e; }
+.search-block.bing h2 { color: #008373; }
+
+/* 12. Цветные полоски слева */
+.search-block.google { border-left: 5px solid #4285f4; }
+.search-block.yandex { border-left: 5px solid #fc3f1d; }
+.search-block.mail { border-left: 5px solid #005ff9; }
+.search-block.yahoo { border-left: 5px solid #720e9e; }
+.search-block.bing { border-left: 5px solid #008373; }
